@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(169, 82%, 27%) }
+  </style>
+</head>
+<body>
+  <main>
+    <form action="#" novalidate>
+      <h1 class="form-title">Contact Us</h1>
+
+      <div class="form-input-group">
+        <!-- First Name -->
+        <div class="form-group">
+          <label class="form-label" for="first-name">First Name<span class="required" aria-hidden="true">*</span></label>
+          <input class="form-input-box-style" type="text" name="first-name" id="first-name" required autocomplete="given-name" aria-invalid="true" aria-describedby="first-name-error">
+          <span id="first-name-error" class="error-message">This field is required</span>
+        </div>
+ 
+        <!-- Last Name -->
+        <div class="form-group">
+          <label class="form-label" for="last-name">Last Name<span class="required" aria-hidden="true">*</span></label>
+          <input class="form-input-box-style" type="text" name="last-name" id="last-name" required autocomplete="family-name" aria-invalid="true" aria-describedby="last-name-error">
+          <span id="last-name-error" class="error-message">This field is required</span>
+        </div>
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <label class="form-label" for="email">Email Address<span class="required" aria-hidden="true">*</span></label>
+        <input class="form-input-box-style" type="email" name="email" id="email" required autocomplete="email" aria-invalid="true" aria-describedby="email-error email-required-error">
+        <span id="email-error" class="error-message">Please enter a valid email address</span>
+        <span id="email-required-error" class="error-message">This field is required</span>
+      </div>
+
+      <!-- Query Type -->
+      <fieldset class="radio-form-group">
+        <legend>Query Type<span class="required" aria-hidden="true">*</span></legend>
+        <!-- radio button -->
+        <label for="general-enquiry" class="form-input-box-style radio-group">
+          <input type="radio" name="query-type" id="general-enquiry" required aria-invalid="true" aria-describedby="query-error">
+          <span>General Enquiry</span>
+        </label>
+        <!-- radio button -->
+        <label for="support-request" class="form-input-box-style radio-group">
+          <input type="radio" name="query-type" id="support-request" required aria-invalid="true" aria-describedby="query-error">
+          <span>Support Request</span>
+        </label>
+
+        <span id="query-error" class="error-message">Please select a query type</span>
+      </fieldset>
+
+      <!-- Message -->
+      <div class="form-group message-input-container">
+        <label class="form-label" for="message">Message<span class="required" aria-hidden="true">*</span></label>
+        <textarea class="form-input-box-style" name="message" id="message" required cols="30" rows="10" aria-invalid="true" aria-describedby="message-error"></textarea>
+        <span id="message-error" class="error-message">This field is required</span>
+      </div>
+
+      <!-- check box -->
+      <div class="checkbox-group">
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" required id="checkbox" aria-invalid="true" aria-describedby="checkbox-error">
+          <span>I consent to being contacted by the team</span>
+          <span class="required" aria-hidden="true">*</span>
+        </label>
+        <span id="checkbox-error" class="error-message">To submit this form, please consent to being contacted</span>
+      </div>
+
+      <!-- submit button -->
+      <button class="form-submit-button" type="submit">Submit</button>
+    </form>
+
+    <!-- success message -->
+    <section class="success-message-section">
+      <div class="success-message-header">
+        <img class="success-icon" src="./assets/images/icon-success-check.svg" alt="check icone">
+        <p class="success-message-title">Message Sent!</p>
+      </div>
+      <p class="success-message-description">Thanks for completing the form. We'll be in touch soon!</p>
+    </section>
+  </main>
+  
+  <!-- footer -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/mojtaba-mehrzad" target="_blank">Mojtaba Mehrzad</a>.
+    </div>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
