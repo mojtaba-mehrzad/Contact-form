@@ -149,6 +149,7 @@ input , textarea{
 
 .radio-group {
     display: flex;
+    justify-content: center;
     font-family: var(--font-Karla-Regular);
     position: relative;
     overflow: hidden;
