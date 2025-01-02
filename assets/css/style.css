@@ -105,7 +105,6 @@ main{
 .form-label , legend{
     margin-bottom: 0.625rem;
     font-family: var(--font-Karla-Regular);
-    cursor: pointer;
 }
 
 .required{
@@ -150,7 +149,6 @@ input , textarea{
 
 .radio-group {
     display: flex;
-    cursor: pointer;
     font-family: var(--font-Karla-Regular);
     position: relative;
     overflow: hidden;
@@ -219,18 +217,16 @@ input , textarea{
             margin-right: 1.25rem;
             vertical-align: middle;
             border-radius: none;
-            cursor: pointer;
             accent-color: var(--Green-600-medium);
         }
     }
 }
 
-.checkbox-group label , .radio-group{
+.checkbox-group label span, .radio-group span{
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: pointer;
 }
 /* checkbox end */
 
@@ -239,7 +235,6 @@ input , textarea{
     width: 100%;
     height: 3.6875rem;
     border: none;
-    cursor: pointer;
     padding: 0rem;
     border-radius: 0.5rem;
     background-color: var(--Green-600-medium);
@@ -314,7 +309,7 @@ input , textarea{
             margin-bottom: 0rem;
 
             input{
-                min-width: 19.9375rem;
+                width: 19.9375rem;
             }
         }
     }
@@ -327,7 +322,7 @@ input , textarea{
         
 
         label{
-            max-width: 19.9375rem;
+            width: 19.9375rem;
             margin-bottom: 0rem;
             &:hover {
                 background-color: var(--Green-200-lighter);
@@ -353,6 +348,10 @@ input , textarea{
 
     .checkbox-group{
         margin-bottom: 2.5rem;
+    }
+
+    .form-submit-button ,.radio-group ,.checkbox-group label{
+        cursor: pointer;
     }
 
     footer{
